@@ -8,6 +8,10 @@
 <meta name="description" content="Сфотографируйте плоскую деталь с подписанными размерами — получите чертёж в DXF и PDF, где каждый размер сверен с вашей подписью.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">ФотоЧертёж</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">ФотоЧертёж</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Чертёж детали по фотографии — DXF и PDF за несколько минут</h1>
-    <p class="sub">Для мастерских лазерной и плазменной резки, производств и частных заказчиков: сфотографируйте плоскую деталь, подпишите размеры на фото — получите чертёж в DXF для резки и PDF для согласования.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Сервис в подготовке · Оплата на этой странице не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для мастерских лазерной и плазменной резки</p>
+      <h1 class="rise" style="--i:1">Чертёж детали по фотографии&nbsp;<span class="soft">— DXF и PDF за несколько минут</span></h1>
+      <p class="rise" style="--i:2">Для мастерских лазерной и плазменной резки, производств и частных заказчиков: сфотографируйте плоскую деталь, подпишите размеры на фото — получите чертёж в DXF для резки и PDF для согласования.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Сервис в подготовке · Оплата на этой странице не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="40" font-weight="600" fill="#0a1524">Чертёж детали</text><line x1="120" y1="210" x2="1080" y2="210" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="260" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="292" font-size="32" fill="#0a1524">Фото детали</text><rect x="130" y="350" width="44" height="44" rx="8" fill="#12397a" /><text x="200" y="382" font-size="32" fill="#0a1524">Сверка размеров</text><rect x="130" y="450" width="300" height="22" rx="8" fill="#dde2ea" /><rect x="130" y="500" width="220" height="22" rx="8" fill="#b9c3d2" /><rect x="130" y="550" width="260" height="22" rx="8" fill="#dde2ea" /><rect x="700" y="260" width="370" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="330" font-size="34" font-weight="600" fill="#0a1524">DXF и PDF</text><rect x="750" y="500" width="50" height="120" rx="8" fill="#12397a" /><rect x="830" y="440" width="50" height="180" rx="8" fill="#ffffff" /><rect x="910" y="550" width="50" height="70" rx="8" fill="#b9c3d2" /><rect x="990" y="480" width="50" height="140" rx="8" fill="#ffffff" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Мастерских лазерной и плазменной</dd></div>
+      <div><dt>Чертёж</dt><dd>Чертёж в DXF</dd></div>
+      <div><dt>Фото</dt><dd>По фотографии</dd></div>
+      <div><dt>Пока</dt><dd>Сервис в подготовке</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Фото детали</b><span>Снимок сверху на ровном фоне с подписанными размерами.</span><br><a class="btn" href="price.html" data-ev="feature_foto">Мне это нужно</a></div>
-      <div class="card"><b>DXF для резки</b><span>Контур детали и отверстия в формате, который принимает станок.</span><br><a class="btn" href="price.html" data-ev="feature_dxf">Мне это нужно</a></div>
-      <div class="card"><b>PDF с размерами</b><span>Чертёж с размерами для согласования с заказчиком.</span><br><a class="btn" href="price.html" data-ev="feature_pdf">Мне это нужно</a></div>
-      <div class="card"><b>Сверка размеров</b><span>Каждый размер чертежа сверен с подписью на фото.</span><br><a class="btn" href="price.html" data-ev="feature_sverka">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="60" width="640" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="130" font-size="34" font-weight="600" fill="#0a1524">Фото детали</text><text x="120" y="180" font-size="30" fill="#566174">ровном фоне</text><rect x="160" y="220" width="480" height="260" rx="16" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="200" y="260" width="280" height="180" rx="8" fill="#ffffff" /><circle cx="560" cy="330" r="36" fill="#12397a" /><rect x="220" y="300" width="160" height="16" rx="8" fill="#dde2ea" /><rect x="220" y="340" width="120" height="16" rx="8" fill="#b9c3d2" /></svg></div>
+        <h3>Фото детали</h3><p>Снимок сверху на ровном фоне с подписанными размерами.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_foto">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="80" y="120" font-size="32" font-weight="600" fill="#0a1524">DXF для резки</text><text x="80" y="170" font-size="30" fill="#566174">контур детали</text><rect x="70" y="220" width="250" height="280" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="100" y="260" width="180" height="18" rx="8" fill="#dde2ea" /><rect x="100" y="300" width="140" height="18" rx="8" fill="#b9c3d2" /><rect x="100" y="340" width="160" height="18" rx="8" fill="#dde2ea" /><path d="M340 360 H420" fill="none" stroke="#12397a" stroke-width="6" /><polygon points="420,346 456,360 420,374" fill="#12397a" /><rect x="480" y="220" width="250" height="280" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="510" y="260" width="180" height="18" rx="8" fill="#dfe8f7" /><rect x="510" y="300" width="150" height="18" rx="8" fill="#dde2ea" /><rect x="510" y="340" width="170" height="18" rx="8" fill="#b9c3d2" /></svg></div>
+        <h3>DXF для резки</h3><p>Контур детали и отверстия в формате, который принимает станок.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_dxf">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="60" width="640" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="34" font-weight="600" fill="#0a1524">PDF с размерами</text><rect x="140" y="190" width="340" height="280" rx="12" fill="#eef2f7" /><rect x="170" y="230" width="260" height="18" rx="8" fill="#dde2ea" /><rect x="170" y="270" width="200" height="18" rx="8" fill="#b9c3d2" /><rect x="170" y="310" width="240" height="18" rx="8" fill="#dde2ea" /><rect x="170" y="350" width="160" height="18" rx="8" fill="#b9c3d2" /><circle cx="560" cy="330" r="64" fill="#dfe8f7" /><polyline points="524,330 548,358 602,290" fill="none" stroke="#12397a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><text x="170" y="430" font-size="30" fill="#566174">для согласования</text></svg></div>
+        <h3>PDF с размерами</h3><p>Чертёж с размерами для согласования с заказчиком.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_pdf">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="80" y="110" font-size="32" font-weight="600" fill="#0a1524">Сверка размеров</text><text x="80" y="160" font-size="30" fill="#566174">на фото</text><rect x="80" y="200" width="250" height="300" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="110" y="240" width="180" height="18" rx="8" fill="#dde2ea" /><rect x="110" y="280" width="140" height="18" rx="8" fill="#b9c3d2" /><rect x="110" y="320" width="160" height="18" rx="8" fill="#12397a" /><rect x="470" y="200" width="250" height="300" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="500" y="240" width="180" height="18" rx="8" fill="#dde2ea" /><rect x="500" y="280" width="150" height="18" rx="8" fill="#dfe8f7" /><rect x="500" y="320" width="120" height="18" rx="8" fill="#b9c3d2" /><line x1="330" y1="249" x2="470" y2="249" fill="none" stroke="#dde2ea" stroke-width="3" /><line x1="330" y1="289" x2="470" y2="289" fill="none" stroke="#dde2ea" stroke-width="3" /><line x1="330" y1="329" x2="470" y2="329" fill="none" stroke="#12397a" stroke-width="3" /></svg></div>
+        <h3>Сверка размеров</h3><p>Каждый размер чертежа сверен с подписью на фото.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_sverka">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Мастерская лазерной резки получает от клиента фото сломанного кронштейна с подписанными размерами: 120 × 80 мм, два отверстия по 8 мм. Через несколько минут — DXF контура с отверстиями и PDF с размерами. Клиент подтверждает чертёж, деталь уходит в резку.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Мастерская лазерной резки получает от клиента фото сломанного кронштейна с подписанными размерами: 120 × 80 мм, два отверстия по 8 мм. Через несколько минут — DXF контура с отверстиями и PDF с размерами. Клиент подтверждает чертёж, деталь уходит в резку.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="160" x2="1000" y2="160" fill="none" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="160" r="22" fill="#12397a" /><text x="240" y="250" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">несколько минут</text><text x="600" y="250" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">DXF контура</text><text x="960" y="250" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">в резку</text><rect x="120" y="310" width="960" height="400" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="400" font-size="36" font-weight="600" fill="#0a1524">PDF с размерами</text><text x="170" y="480" font-size="32" fill="#566174">два отверстия</text><rect x="170" y="560" width="180" height="24" rx="8" fill="#dde2ea" /><rect x="370" y="560" width="140" height="24" rx="8" fill="#b9c3d2" /><rect x="530" y="560" width="220" height="24" rx="8" fill="#dfe8f7" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>Мастерская резки или небольшое производство часто получает заказ не с чертежом, а с деталью или её фотографией: сломался кронштейн, нужна такая же пластина, нужна прокладка по образцу. Чтобы деталь вырезать, сначала нужен чертёж, а начертить её — отдельная работа, которую берут за каждый чертёж. ФотоЧертёж делает чертёж плоской детали по фотографии.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>Мастерская резки или небольшое производство часто получает заказ не с чертежом, а с деталью или её фотографией: сломался кронштейн, нужна такая же пластина, нужна прокладка по образцу. Чтобы деталь вырезать, сначала нужен чертёж, а начертить её — отдельная работа, которую берут за каждый чертёж. ФотоЧертёж делает чертёж плоской детали по фотографии.</p>
     <p>Деталь фотографируют сверху, на ровном светлом фоне, так чтобы она целиком попала в кадр. На фото или рядом подписывают основные размеры: длину, ширину, диаметры отверстий, расстояния между ними. Чем больше размеров подписано, тем точнее чертёж.</p>
     <p>Сервис выделяет контур детали и отверстия, приводит их к подписанным размерам и строит чертёж. Каждый размер чертежа сравнивается с вашей подписью; если что-то не сходится — например, сумма отрезков не равна общей длине, — размер отмечается для проверки.</p>
     <p>Результат — два файла: DXF с контуром и отверстиями для станка лазерной, плазменной или гидроабразивной резки и PDF с размерами для согласования с заказчиком. Файлы можно скачать сразу или отправить заказчику ссылкой.</p>
@@ -105,31 +139,34 @@
     <p>В PDF чертежа можно добавить толщину и марку материала, количество деталей и комментарий для оператора станка. Эти сведения остаются в архиве вместе с файлами и пригодятся, когда клиент вернётся за той же деталью через полгода.</p>
     <p>Слои DXF названы понятно: контур, отверстия, размеры. Оператор открывает файл в своей программе раскроя и сразу видит, что резать, а что служит только для справки. Если оператору удобнее другой формат слоёв, его можно выбрать один раз в настройках мастерской, и все следующие файлы придут уже в нём.</p>
     <p>ФотоЧертёж — инструмент подготовки чертежа. Перед резкой размеры проверяет мастер или заказчик; за изготовленную деталь отвечает исполнитель заказа.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Какие детали подходят?</h3>
-    <p>Плоские: пластины, кронштейны, фланцы, прокладки, шаблоны.</p>
-    <h3>В каком формате чертёж?</h3>
-    <p>DXF для станка и PDF с размерами.</p>
-    <h3>Нужно ли подписывать размеры?</h3>
-    <p>Да, основные размеры подписываются на фото или рядом с ним.</p>
-    <h3>Что если размер не сходится?</h3>
-    <p>Он отмечается для проверки, и вы правите его в сервисе.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис готовится, и мы проверяем, нужен ли он мастерским.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Какие детали подходят?</h3><p>Плоские: пластины, кронштейны, фланцы, прокладки, шаблоны.</p></div>
+      <div class="split flip"><h3>В каком формате чертёж?</h3><p>DXF для станка и PDF с размерами.</p></div>
+      <div class="split flip"><h3>Нужно ли подписывать размеры?</h3><p>Да, основные размеры подписываются на фото или рядом с ним.</p></div>
+      <div class="split flip"><h3>Что если размер не сходится?</h3><p>Он отмечается для проверки, и вы правите его в сервисе.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис готовится, и мы проверяем, нужен ли он мастерским.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Загрузите фото детали</h2>
-    <p><label>Для чего чертёж<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>Лазерная резка</option><option>Плазменная резка</option><option>Фрезеровка</option><option>Для себя</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Загрузить фото</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Загрузите фото детали</h2>
+    </div>
+    <div class="tile stack">
+      <label>Для чего чертёж<select data-ev-focus="form_start"><option value="">— выберите —</option><option>Лазерная резка</option><option>Плазменная резка</option><option>Фрезеровка</option><option>Для себя</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Загрузить фото</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>ФотоЧертёж</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Инструмент подготовки чертежа. Размеры перед изготовлением проверяет мастер или заказчик.</p>
+  <p>Инструмент подготовки чертежа. Размеры перед изготовлением проверяет мастер или заказчик.</p>
 </div></footer>
 
 </body>
